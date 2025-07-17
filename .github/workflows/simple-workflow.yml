@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Simple GitHub Action Workflow
+name: Simple github actions workflow
 
 # Controls when the workflow will run
 on:
@@ -9,7 +9,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -24,6 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
