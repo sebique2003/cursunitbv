@@ -38,12 +38,12 @@ jobs:
         run: cd terraform
 
       - name: Run Terraform Init
-        run:
+        run: |
             cd terraform
             terraform init
 
       - name: Run Terraform plan
-        run:
+        run: |
             cd terraform
             terraform plan
 
